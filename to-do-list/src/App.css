@@ -1,0 +1,110 @@
+
+.todo-list-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #6b11cb5b, #2574fcb5);  min-height: 100vh;
+  color: #333;
+}
+
+.todo-list-title {
+  font-size: 50px;
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
+
+.todo-list-title:hover {
+  transform: scale(1.09);
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Glow effect on hover */
+}
+
+.todo-list-input {
+  margin-bottom: 40px;
+}
+
+.todo-input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:hover {
+  transform: scale(1.03);
+}
+
+.todo-input:focus {
+  border-color: #0056b3;
+}
+
+.add-task-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1a5fcd;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-task-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 350px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background: #e9ecef;
+  transform: scale(1.04);
+  box-shadow: 0 0 5px #e91e63, 0 0 10px #e91e63, 0 0 20px #e91e63;
+}
+
+.todo-text {
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 18px;
+  color: #343a40;
+  transition: text-decoration 0.3s ease;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.remove-task-button {
+  background-color: #dc3545;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-task-button:hover {
+  background-color: #c82333;
+  box-shadow: 0 0 0px #e91e1e, 0 0 0px #e91e1e, 0 0 10px #e91e1e;
+}

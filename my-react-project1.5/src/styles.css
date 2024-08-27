@@ -1,0 +1,347 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #f4f4f9, #d8b3ff);
+    background-image: url('./assets/purple2.jpg');
+    background-size: cover;
+  }
+
+  .home {
+    background: linear-gradient(to bottom, #f4f4f9, #d8b3ff);
+  }
+  
+  header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    transition: text-shadow 0.5s ease; /* Added transition for glow effect */
+  }
+  
+  header h1:hover {
+    transform: scale(1.07);
+    text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 20px #ffffff; /* Glow effect on hover */
+  }
+
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #e8326f;
+    font-size: 1.6em;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    text-shadow: 0 0 0px #6a11cb, 0 0 0px #6a11cb, 0 0 10px #6a11cb; /* Glow effect on hover */
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  color: #333; /* Dark color for headings */
+  transition: text-shadow 0.3s ease; /* Added transition for glow effect */
+}
+
+.section h2::after {
+  content: '';
+  height: 3px;
+  width: 50px;
+  background: #6a11cb;
+  display: block;
+  margin: 10px auto;
+}
+
+.section h2:hover {
+  text-shadow: 0 0 10px #6a11cb, 0 0 20px #6a11cb, 0 0 30px #6a11cb; /* Glow effect on hover */
+}
+  
+  .hero {
+    background: url('./assets/purple.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 40px;
+    border-radius: 15px;
+    color: #ffffff; /* Gold color for emphasis */
+    transition: text-shadow 0.3s ease; /* Added transition for glow effect */
+  }
+  
+  .hero h2:hover {
+    text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 30px #ffffff; /* Glow effect on hover */
+  }
+
+  .courses h1 {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 50px 100px 10px 565px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: #ffffff; /* Gold color for emphasis */
+    transition: text-shadow 0.3s ease; /* Added transition for glow effect */
+  }
+  
+  .courses h1:hover {
+    text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 30px #ffffff; /* Glow effect on hover */
+    box-shadow: 0 0 10px #e91e63, 0 0 25px #e91e63, 0 0 50px #e91e63;
+  }
+  
+  .hero p {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff; /* White color for text */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #e91e63;
+    box-shadow: 0 0 10px #e91e63, 0 0 20px #e91e63, 0 0 30px #e91e63;
+  }
+  
+  .course {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(255, 243, 250);
+    color: #333; /* Dark color for text */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 800px;;
+    max-height: 200px;
+    
+  }
+
+  .course:hover {
+    border: 2px solid #6a11cb; /* Border color change on hover */
+    box-shadow: 0 0 10px #e91e63, 0 0 20px #e91e63, 0 0 30px #e91e63;
+    transition: border 0.3s ease; /* Added transition for border */
+    background: #ffffff;
+    max-width: 850px;
+    max-height: 450px;
+  }
+
+  .about, .admissions, .contact {
+    margin: 20px auto;
+    padding: 20px 200px 20px 200px;
+    background: #f5f5f5cb;
+    color: #333; /* Dark color for text */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 800px;
+    transition: border 0.3s ease; /* Added transition for border */
+  }
+
+  .about:hover, .admissions:hover, .contact:hover {
+    border: 2px solid #6a11cb; /* Border color change on hover */
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #e21ee9, 0 0 50px #e21ee9, 0 0 70px #e21ee9;
+    background: #f5f5f5;
+    max-width: 850px;
+  }
+  
+  .course h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #6a11cb; /* Accent color for headings */
+  }
+  
+  .course p {
+    font-size: 1em;
+    color: #666; /* Light gray color for paragraph text */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333; /* Dark color for form labels */
+  }
+  
+  form input, form select {
+    margin: 5px 0 20px;
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"], form input[type="reset"] {
+    width: 150px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #2575fc;
+    box-shadow: 0 0 10px #2575fc, 0 0 20px #2575fc, 0 0 30px #2575fc;
+  }
+
+  form input[type="reset"]:hover {
+    background: #2575fc;
+    box-shadow: 0 0 10px #2575fc, 0 0 20px #2575fc, 0 0 30px #2575fc;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .thank-you {
+    background: rgba(255, 255, 255, 0.8); /* Transparent background */
+    color: #333;
+    padding: 60px 20px;
+    margin: 100px;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+
+  .thank-you:hover {
+    max-width: 1200px;
+    box-shadow:#e91e63;
+    padding: 60px 20px;
+
+
+  }
+  
+  .thank-you h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6a11cb; /* Accent color for headings */
+    transition: text-shadow 0.3s ease, transform 0.3s ease; /* Transition for glow and scale effect */
+  }
+  
+  .thank-you h2:hover {
+    text-shadow: 0 0 10px #6a11cb, 0 0 20px #6a11cb, 0 0 30px #6a11cb; /* Glow effect on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .thank-you p {
+    font-size: 1.2em;
+    color: #666; /* Light gray color for text */
+    margin: 0;
+    padding: 0;
+    transition: color 0.3s ease; /* Transition for text color */
+  }
+  
+  .thank-you p:hover {
+    color: #6a11cb; /* Change text color on hover */
+  }
+  
+  .thank-you .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px ;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transition for background, box-shadow, and scale */
+  }
+  
+  .thank-you .cta-button:hover {
+    background: #e91e63;
+    box-shadow: 0 0 10px #e91e63, 0 0 20px #e91e63, 0 0 30px #e91e63;
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .scroll-button {
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .scroll-button:hover {
+    background-color: #e91e63;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0 0 1px #e91e63, 0 0 5px #e91e63, 0 0 10px #e91e63;
+  }
+
+
+
+
+
+
