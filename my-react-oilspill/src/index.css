@@ -1,0 +1,212 @@
+/* General Styles */
+.ship-tracking-system {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue gradient */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #333; /* Darker text color for better visibility */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em; /* Increased font size */
+  color: #333; /* Dark color for header */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Added more space between sections */
+  gap: 20px; /* Added gap between the containers */
+}
+
+.form-section, .ship-info-section {
+  width: 48%; /* Reduced width to fit the container better */
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8); /* Light background for sections */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555; /* Darker label color */
+}
+
+input {
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 90%;
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #fff; /* White input background */
+  color: #333; /* Dark text color */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  box-shadow: 0 0 8px rgba(0, 0, 255, 0.5); /* Focus effect */
+  outline: none;
+}
+
+button {
+  display: block;
+  padding: 12px 20px;
+  background-color: #007bff; /* Blue button color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px);
+}
+
+.ship-info-section {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.ship-info-section h2 {
+  margin-top: 0;
+  color: #333; /* Dark color for section headers */
+}
+
+.ship-info-section p {
+  margin: 5px 0;
+  color: #555; /* Darker color for text */
+}
+
+.satellite-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.satellite-image img {
+  width: 85%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-top: 10px;
+}
+
+.or-divider {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333; /* Dark color for dividers */
+}
+
+.detection-section {
+  width: 97%; /* Full width */
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9); /* Light background for detection section */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.anomaly-detected, .oil-spill-detected {
+  width: 97%; /* Full width */
+  margin-bottom: 20px;
+  padding: 25px;
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.green {
+  color: #28a745; /* Green for success messages */
+}
+
+.red {
+  color: #dc3545; /* Red for anomalies */
+}
+
+/* Custom alert styles */
+.custom-alert {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dc3545; /* Red background for alert */
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out; /* Added fade-in animation */
+}
+
+.custom-alert p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close-alert-btn {
+  background-color: #fff;
+  color: #dc3545;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.close-alert-btn:hover {
+  background-color: #ffe5e5;
+}
+
+/* Animation for alert */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* General Styles */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3em; /* Increased font size */
+  color: #004080; /* Dark blue color for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Stronger text shadow for depth */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em; /* Increased font size */
+  color: #0056b3; /* A brighter blue for subheadings */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-bottom: 2px solid #007bff; /* Bottom border for separation */
+  padding-bottom: 10px; /* Padding below the text */
+}
